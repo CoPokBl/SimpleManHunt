@@ -27,6 +27,7 @@ public class Main extends JavaPlugin {
 
         new CompassManager().register();
         new PortalManager().register();
+        new MorePearls().register();
 
         Objects.requireNonNull(getCommand("manhunt")).setExecutor(new ManHuntCommand());
 

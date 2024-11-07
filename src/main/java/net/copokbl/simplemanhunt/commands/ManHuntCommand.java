@@ -53,6 +53,8 @@ public class ManHuntCommand implements CommandExecutor {
             if (!Main.runners.contains(player)) player.getInventory().addItem(new ItemStack(Material.COMPASS));
             player.setRespawnLocation(world.getSpawnLocation(), true);
             player.setInvulnerable(true);
+            player.setLevel(0);
+            player.setExp(0f);
             AttributeInstance maxHealth = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
             assert maxHealth != null;
             maxHealth.getModifiers().forEach(maxHealth::removeModifier);

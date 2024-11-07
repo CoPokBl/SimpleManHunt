@@ -48,6 +48,10 @@ public class CompassManager implements Listener {
                     return;
                 }
 
+                if (!holdingPlayer.getWorld().getName().equals(event.getTo().getWorld().getName())) {
+                    return;  // They changed worlds
+                }
+
                 holdingPlayer.setCompassTarget(event.getTo());
             }
         }
