@@ -1,0 +1,9 @@
+main: net.copokbl.simplemanhunt.Main
+name: SimpleManHunt
+authors: [CoPokBl, Calcilore]
+version: 0.0.1
+api-version: 1.13
+description: A manhunt plugin
+commands:
+  manhunt:
+
